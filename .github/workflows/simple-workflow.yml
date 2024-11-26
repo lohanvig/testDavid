@@ -1,0 +1,14 @@
+name : premier test des actions
+
+on: 
+  worflow_dispatch: 
+  
+  schedule: 
+    - cron: "0 * * * *"
+
+jobs : 
+  main_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Récupération du code source"
+      - run: echo "Vérification terminée"
