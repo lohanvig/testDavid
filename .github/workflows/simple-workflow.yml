@@ -3,8 +3,8 @@ name : premier test des actions
 on: 
   workflow_dispatch: 
   
-  schedule: 
-    - cron: "0 * * * *"
+  #schedule: 
+   # - cron: "0 * * * *"
 
 jobs : 
   main_job:
