@@ -10,5 +10,9 @@ jobs :
   main_job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Récupération du code source"
-      - run: echo "Vérification terminée"
+      - name: Checkout code source
+        run: echo "Récupération du code source"
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: verification termine
+        run: echo "Vérification terminée"
